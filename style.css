@@ -377,12 +377,13 @@ a {
   /* margin: 10px 45px 10px 45px; */
   border-radius: 5px;
   box-shadow: inset 0 0 1em white, 0 0 2em rgb(169, 167, 167);
+  margin-top: 50px;
 }
 
 .image-bg h2 { /* modif apporté à l'ettique équipe pédagogique sur la video */
   position: absolute;
-  top: 0;
-  left: -3%;
+  top: 3%;
+  left: -4%;
   border: #ce0033 solid 1px;
   background: #ce0033;
   padding: 10px 25px;
@@ -399,7 +400,7 @@ a {
   padding: 10px 25px;
   color: #ffffff;
   margin-left: -30px;
-  margin-top: 50px;
+  margin-top: 30px;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
 }
@@ -411,38 +412,54 @@ a {
   height: 140px;
 }
 
+/***=== Section alumni ===***/
 .alumni {
   width: 90%;
-  margin: 0 auto;
+  margin: 80px auto;/* ajout de marge pour espacé les sections */
   display: grid;
-  grid-template-columns: 70% 1fr;
+  grid-template-columns: 50% 1fr;
 }
 
 .texte {
-  padding: 20px 0 20px 50px;
+  /* padding: 20px 0 20px 50px; */
 }
 
 .image-alumni {
+  width: 90%;
   margin-top: 25px;
-  background: url(img/8.png);
+  /* height: 400px; */
+  /* width: 72%; */
+  /* margin-left: 200px; */
+  box-shadow: 0px 0px 20px gray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.video-alumni { /* */
+  width: 100%;
   height: 400px;
-  width: 72%;
+  background: url(img/8.png);
   background-repeat: no-repeat;
-  border-radius: 5px;
-  margin-left: 200px;
+  background-size: cover;/* */
+  background-position: center;
 }
 
 .texte p {
   padding-right: 50px;
-  font-size: 20px;
+  font-size: 22px;
   background: #e8e5e5;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 100px;/* */
+  padding-bottom: 100px;/* */
   padding-left: 50px;
+  margin-top: 100px;
 }
 
 .plays {
-  margin: 20px 150px 30px 150px;
+  /* margin: 20px 150px 30px 150px; */
+  display: flex; /* */
+  justify-content: center;/* */
+  align-items: center; /* */
+  position: relative; /* */
 }
 
 .text {
@@ -451,15 +468,22 @@ a {
   font-weight: bold;
   padding-bottom: 12px;
   border-top: #ce0033 solid 5px;
-  padding-right: -200px;
+  /* padding-right: -200px; */
+  margin-top: 0px;/* */
+  padding: 20px;/* */
+  border-bottom-left-radius: 10px;/* */
+  border-bottom-right-radius: 10px;/* */
 }
 
 .temps {
   background: #ce0033;
   display: inline-block;
   padding: 5px 10px;
-  margin-left: 440px;
   color: #ffffff;
+  font-weight: bold;
+  position: absolute; /* */
+  bottom: -120px; /* */
+  right: 5%; /* */
 }
 
 .histoire {
@@ -1071,7 +1095,50 @@ footer {
     width: 120px;
     height: 120px;
   }
+
+  /***=== Section alumni ===***/
+  .texte p {
+    padding-top: 70px;/* */
+    padding-bottom: 70px;/* */
+    margin-top: 60px;
+  }
+  .video-alumni { /* */
+    height: 320px;
+  }
+  .video-alumni h2 {
+    font-size: 20px;
+  }
+  .plays img {
+    width: 120px;
+    height: 120px;
+  }
+  .temps {
+    position: absolute; /* */
+    bottom: -60px; /* */
+    right: 5%; /* */
+  }
+  .text {
+    font-size: 18px;
+  }
+  
 }
+
+
+
+
+/* Deuxième breakpoint à 1220px */
+@media (max-width: 1220px) {
+  /***=== Section alumni ===***/
+
+  .video-alumni { /* */
+    height: 290px;
+  }
+}
+
+
+
+
+
 
 @media (max-width: 1025px) {
   /***=== Section équipe pédagogique ===***/
@@ -1092,7 +1159,44 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  /***=== Section alumni ===***/
+  .alumni {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+  .image-alumni {
+    width: 90%;
+    margin: auto;
+  }
+  .texte p {
+    padding-right: 50px;
+    padding-top: 50px;/* */
+    padding-bottom: 50px;/* */
+    padding-left: 50px;
+  }
+  
+  .video-alumni { /* */
+    height: 290px;
+  }
+  .video-alumni h2 {
+    font-size: 18px;
+  }
+  .plays img {
+    width: 100px;
+    height: 100px;
+  }
+  .temps {
+    position: absolute; /* */
+    bottom: -60px; /* */
+    right: 5%; /* */
+  }
 }
+
+
+
+
 
 @media (max-width: 768px) {
   /***=== Section équipe pédagogique ===***/
@@ -1114,11 +1218,18 @@ footer {
   }
 }
 
+
+
+
+
+
+
 @media (max-width: 580px) {
   /***=== Section équipe pédagogique ===***/
   .equipe-pedagogique h2.titre-equipe-pedago,
   .alumni h2.titre-alumni {
-    font-size: 22px; 
+    font-size: 22px;
+    margin-bottom: 30px; 
   }
   .image-bg h2 { /* modif apporté à l'ettique équipe pédagogique sur la video */
     font-size: 14px;
@@ -1131,5 +1242,45 @@ footer {
     height: 35vh;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .equipe-pedagogique hr,
+  .texte hr,
+  .histoire hr {
+    width: 60px;
+    /* height: 3px;
+    float: left;
+    background-color: #000000;
+    margin-top: -30px; */
+  }
+  .texte p {
+    font-size: 18px;
+    padding-top: 30px;/* */
+    padding-bottom: 30px;/* */
+  }
+  .text {
+    font-size: 16px;
+  }
+  .plays img {
+    width: 70px;
+    height: 70px;
+  }
+  .video-alumni { /* */
+    width: 100%;
+    height: 200px;
+    background: url(img/8.png);
+    background-repeat: no-repeat;
+    background-size: cover;/* */
+    background-position: center;
+  }
+  .video-alumni h2 {
+    font-size: 14px;
+  }
+  .temps {
+    position: absolute; /* */
+    bottom: -15px; /* */
+    right: 5%; /* */
+  }
+  .image-bg h2 { /* modif apporté à l'ettique équipe pédagogique sur la video */
+    font-size: 14px;
   }
 }
