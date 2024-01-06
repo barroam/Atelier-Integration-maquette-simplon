@@ -486,6 +486,8 @@ a {
   right: 5%; /* */
 }
 
+/*  */
+
 .histoire {
   width: 90%;
   margin: 0 auto;
@@ -1192,6 +1194,19 @@ footer {
     bottom: -60px; /* */
     right: 5%; /* */
   }
+
+  /* section histoire */
+  .histoire h2 {
+    font-size: 32px;
+  }
+  .grid-histoire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .coach {
+    width: 42%;
+  }
 }
 
 
@@ -1215,6 +1230,15 @@ footer {
     height: 45vh;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  /* section histoire */
+  .histoire h2 {
+    font-size: 28px;
+  }
+  
+  .coach {
+    width: 40%;
   }
 }
 
@@ -1282,5 +1306,14 @@ footer {
   }
   .image-bg h2 { /* modif apporté à l'ettique équipe pédagogique sur la video */
     font-size: 14px;
+  }
+
+  /* section histoire */
+  .histoire h2 {
+    font-size: 22px;
+  }
+
+  .coach {
+    width: 90%;
   }
 }
