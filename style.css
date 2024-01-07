@@ -616,9 +616,9 @@ a {
   color: #ce0033;
   font-size: 50px;
   font-weight: bolder;
-  position: relative;
+  /* position: relative;
   left: 150px;
-  bottom: 50px;
+  bottom: 50px; */
 }
 
 .hr1main {
@@ -736,8 +736,7 @@ a {
 .apprenants {
   position: relative;
   top: 95px;
-  margin-top: -115px;
-  
+  margin-top: -115px; 
 }
 
 .sectionmain2 {
@@ -874,10 +873,10 @@ a {
 }
 
 form {
-  width: 40%;
-  height: 90%;
-  margin-left: 55px;
-  padding-right: 90px;
+  width: 40%; /* */
+  height: 65%;
+  /* margin-left: 55px; */
+  /* padding-right: 90px; */
 }
 
 label[for="confirmation"] {
@@ -926,23 +925,23 @@ input[type="submit"] {
 
 .div_contact {
   width: 100vw;
-  height: 85vh;
+  min-height: 85vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .nouveau {
-  position: relative;
-  left: 600px;
+  display: flex;
+  justify-content: center;
 }
 
-form {
+/* form {
   position: relative;
   left: 150px;
   top: 90px;
-}
+} */
 
 .fa-location-dot,
 .fa-phone-volume,
@@ -956,8 +955,9 @@ form {
 
 .conteneur {
   position: relative;
-  right: 155px;
-  bottom: 70px;
+  width: 40%;
+  height: 30vh;
+  border: 1px solid red;
 }
 
 .para1_sous_conteneur1 {
@@ -1122,6 +1122,23 @@ footer {
   .text {
     font-size: 18px;
   }
+
+  /* Nous contacter */
+  .h21main {
+    font-size: 42px;
+  }
+
+
+  /***=== Section div contact ===***/
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 45%;
+    height: 60px;
+  }
+  textarea {
+    width: 95%;
+  }
   
 }
 
@@ -1134,6 +1151,25 @@ footer {
 
   .video-alumni { /* */
     height: 290px;
+  }
+
+  /***=== Section div contact ===***/
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 40%;
+    height: 60px;
+  }
+  textarea {
+    width: 90%;
+  }
+  input[type="submit"] {
+    font-size: 16px;
+    width: 140px;
+    height: 45px;
+  }
+  form p {
+    font-size: 16px;
   }
 }
 
@@ -1207,6 +1243,38 @@ footer {
   .coach {
     width: 42%;
   }
+
+  /* Nous contacter */
+  .h21main {
+    font-size: 32px;
+  }
+
+  /***=== Section div contact ===***/
+  .div_contact {
+    display: flex;
+    justify-content: center;
+  }
+  form {
+    display: block;
+    width: 80%;
+    height: 70%;
+    /* margin-left: 55px; */
+    padding: 50px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 45%;
+    height: 60px;
+  }
+  textarea {
+    width: 95%;
+  }
+  .conteneur {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 
@@ -1239,6 +1307,45 @@ footer {
   
   .coach {
     width: 40%;
+  }
+
+  /* Nous contacter */
+  .h21main {
+    font-size: 28px;
+  }
+
+  /***=== Section div contact ===***/
+  input[type="submit"] {
+    font-size: 14px;
+    width: 130px;
+    height: 45px;
+  }
+  .div4-form label {
+    font-size: 18px;
+  }
+  form p {
+    font-size: 12px;
+  }
+  .conteneur {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .fa-location-dot,
+  .fa-phone-volume,
+  .fa-envelope {
+    font-size: 20px;
+    position: relative;
+    right: 25px;
+    top: 26px;
+  }
+  .para1_sous_conteneur1 {
+    font-size: 18px;
+  }
+  
+  .para2_sous_conteneur1 {
+    width: 160px;
+    font-size: 14px;
   }
 }
 
@@ -1315,5 +1422,66 @@ footer {
 
   .coach {
     width: 90%;
+  }
+
+  /* Nous contacter */
+  .h21main {
+    font-size: 22px;
+  }
+  .div_contact {
+    width: 100vw;
+    min-height: 100vh;
+  }
+
+  form {
+    display: block;
+    width: 80%;
+    height: 80%;
+    /* margin-left: 55px; */
+    padding: 50px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 90%;
+    height: 50px;
+    padding: 0px 20px;
+  }
+  textarea {
+    width: 90%;
+    height: 100px;
+    padding: 20px;
+  }
+  input[type="submit"] {
+    font-size: 12px;
+    width: 110px;
+    height: 40px;
+  }
+  .div4-form label {
+    font-size: 14px;
+  } /*** ***/
+  .conteneur {
+    width: 90%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .fa-location-dot,
+  .fa-phone-volume,
+  .fa-envelope {
+    font-size: 20px;
+    position: relative;
+    right: 25px;
+    top: 26px;
+  }
+  .para1_sous_conteneur1 {
+    font-size: 18px;
+  }
+  
+  .para2_sous_conteneur1 {
+    width: 160px;
+    font-size: 14px;
   }
 }
