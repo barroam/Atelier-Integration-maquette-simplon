@@ -685,18 +685,16 @@ border: orangered solid 1px;
 
 .section6 {
     width: 100%;
-    height: 1270px;
+    min-height: 70vh;
     background-color: #FFFFFF;
-    position: relative;
 }
 
 .div1section6 {
     width: 100%;
+    height: 30vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    position: absolute;
-    top: 10%;
 }
 
 .div-div1section6 {
@@ -707,8 +705,7 @@ border: orangered solid 1px;
 }
 
 .section6 h2 {
-    position: absolute;
-    left: 39%;
+    text-align: center;
     font-size: 53px;
     font-weight: bolder;
     color: rgb(197, 17, 53);
@@ -718,7 +715,7 @@ border: orangered solid 1px;
     margin-left: 45px;
     margin-top: 40px;
     width: 40%;
-    height: 40vh;
+    height: 20vh;
     background-image: url("img/30.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -742,32 +739,31 @@ border: orangered solid 1px;
     line-height: 35px;
 }
 
-.div2section6 {
+.div2section6 { /***** *****/
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-    position: absolute;
-    bottom: 5%;
-    height: 100vh;
+    height: auto;
 }
 
 form {
     width: 40%;
     height: 90%;
-    margin-right: 270px;
+    /* margin-right: 270px; */
     padding-right: 90px;
-    margin-top: 255px;
+    /* margin-top: 255px; */
 }
 
 .div-div2section6 {
     width: 40%;
-    height: 75%;
-    margin-left: 177px;
-    margin-top: 350px;
+    height: 630px;
+    /* margin-left: 177px; */
+    /* margin-top: 350px; */
     border: 1px solid #ecd3d9;
     border-radius: 20px;
     background-color: #ecd3d9;
+    padding: 20px;
 }
 
 label[for="confirmation"] {
@@ -818,9 +814,8 @@ input[type="submit"] {
     font-size: 36px;
     font-weight: bolder;
     color: rgb(197, 17, 53);
-    position: relative;
-    left: 30px;
-    bottom: 15px;
+    text-align: left;
+    margin-left: 30px;
 }
 
 .ligne1 {
@@ -876,7 +871,7 @@ input[type="submit"] {
 
 .sous-div {
     width: 30%;
-    height: 22vh;
+    height: 10vh;
     background-color: #FFFFFF;
     border: 1px #FFFFFF solid;
     border-radius: 15px;
@@ -1017,7 +1012,7 @@ input[type="submit"] {
 }
 .section7 {
    width: 100vw;
-   height: 70vh;
+   height: auto;
    display: flex;
    flex-flow: row wrap;
    justify-content: space-around;
@@ -1032,8 +1027,8 @@ input[type="submit"] {
     background-position: center;
     background-size: cover;
     border-radius: 50%;
-    position: relative;
-    left: 230px;
+    /* position: relative;
+    left: 230px; */
  }
  .div2_div1_section7 {
     width: 200px;
@@ -1043,8 +1038,8 @@ input[type="submit"] {
     background-position: center;
     background-size: cover;
     border-radius: 50%;
-    position: relative;
-    left: 230px;
+    /* position: relative;
+    left: 230px; */
  }
  .para1_div1_section7 {
     color: #000000;
@@ -1054,8 +1049,12 @@ input[type="submit"] {
  }
 
  .div1_section7 {
-    width: 35vw;
-    height: 60vh;
+    width: 520px;
+    height: auto;
+    display: flex; /* */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
  }
  .fa-quote-left {
     color: #ce0033;
@@ -1096,3 +1095,205 @@ img {
 .sous_div2_conteneur_fabrique_mission hr {
     color: white;
 }
+
+
+
+/* Responsive Design */
+/* Premier breakpoint à 1520px */
+@media (max-width: 1520px) {
+    /***=== Section recrutement ===***/
+    .section6 h2 {
+        font-size: 43px;
+    }
+    .para1-div-div1section6 {
+        font-size: 28px;
+    }
+    .para2-div-div1section6 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+  
+    /***=== Section  ===***/
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 200px;
+        height: 60px;
+    }
+    input[type="submit"] {
+        font-size: 13px;
+        width: 140px;
+        height: 45px;
+    }
+    label[for="confirmation"] {
+        font-size: 16px;
+    }
+    form p {
+        font-size: 16px;
+    }
+  
+  
+    /***=== Section div contact ===***/
+    .referent-logo {
+        font-size: 25px; 
+        width: 90px;
+        height: 60px;
+    }
+    .appel-p {
+        font-size: 22px;
+     }
+     .gras-p {
+         font-size: 28px;
+      }
+  
+    /***=== Section partenaire ===***/
+    .partenaires h2 {
+        font-size: 43px;
+    } 
+
+
+    .div-div2section6 h2 {
+        font-size: 30px;
+    }
+    
+  }
+  
+  
+  
+  
+  /* Deuxième breakpoint à 1220px */
+  @media (max-width: 1220px) {
+    /***=== Section recrutement ===***/
+    .section6 h2 {
+        font-size: 38px;
+    }
+  
+    
+    /***=== Section div contact ===***/
+   .grid-candidature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+   .appel-candidature h2 {
+    font-size: 38px;
+   }
+   .referent-logo {
+    font-size: 23px; 
+    width: 80px;
+    height: 50px;
+    }
+    .appel-p {
+        font-size: 20px;
+    }
+    .gras-p {
+        font-size: 26px;
+    }
+  
+    /***=== Section partenaires ===***/
+    .partenaires h2 {
+        font-size: 38px;
+    } 
+    
+  }
+  
+  
+  
+  
+  
+  
+  @media (max-width: 1025px) {
+    /***=== Section recrutement ===***/
+    .section6 h2 {
+        font-size: 32px;
+    }
+    .div1section6 {
+       width: 100%;
+       height: 70vh; 
+        display: flex;
+        /* flex-direction: column; */
+        gap: 30px;
+        position: absolute;
+        top: 5%;
+    }
+    .div1-div1section6 {
+        width: 90%;
+        /* height: auto; */
+        /* height: 40vh; */
+    }
+    .div-div1section6 {
+        width: 90%;
+        margin: auto;
+    }
+  
+    /***=== Section appel candidature ===***/
+    .appel-candidature h2 {
+        font-size: 32px;
+    }
+    /* Nous partenaires */
+    .partenaires h2 {
+        font-size: 32px;
+    } 
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+  
+    /***=== Section div contact ===***/
+
+  
+
+  }
+  
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    /***=== Section équipe pédagogique ===***/
+
+  
+    /* section  */
+
+    /* appel a candidature */
+    .grid-candidature {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /***=== partenaires  ===***/
+    
+  
+  }
+  
+  
+  
+  
+  
+  
+  @media (max-width: 580px) {
+    .section6 h2 {
+        font-size: 28px;
+    }
+    .appel-candidature h2 {
+        font-size: 28px;
+    }
+    .referent-logo {
+        font-size: 21px; 
+        width: 70px;
+        height: 30px;
+    }
+    .appel-p {
+        font-size: 18px;
+    }
+    .gras-p {
+        font-size: 24px;
+    }
+    .partenaires h2 {
+        font-size: 28px;
+    } 
+      
+  }
